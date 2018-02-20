@@ -1,0 +1,172 @@
+.main_body{
+    background-image: url(images/portfolio_background_images.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.header{
+    border-top:black solid 1em;
+    height: 15em;
+    width: 100%;
+    background: gray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(grey , white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(grey , white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(grey , white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(grey , white); /* Standard syntax */
+}
+
+.logo{
+    position: absolute;
+    background-image: url('images/ak_trans_w_frame_500.png');
+    background-size: 100% 100%;
+    opacity: 0.7;
+    top:5%;
+    left: 2%;
+    width: 10em;
+    height: 10em;
+    border: 10px solid  #c13a65 ;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+.logo:hover{
+    width: 12em;
+    height: 12em;
+}
+.port_name{
+    text-align: center;
+    font-family: Gabriola;
+    display: none;
+}
+
+.info_div> h4{
+    color: white;
+    text-align: center;
+    font-family: Gabriola;
+    font-weight: bolder;
+    font-size: 2em;
+}
+.info_div> p{
+    font-family: Calibri;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.row1 {
+    margin-left: 25%;
+}
+
+.row2{
+    margin-left: 35%;
+}
+.time_message{
+    color: white;
+    text-align: center;
+    font-family: Constantia;
+}
+
+.info_div{
+    margin-left: 5%;
+    margin-bottom: 2.9%;
+    height: 12em;
+    width: 12em;
+    border: .5em black solid;
+    background-color: #c8678f;
+    opacity: 0.8;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+
+.info_div:hover{
+    height: 12em;
+    width: 12em;
+    border: none;
+    background-color: azure;
+}
+
+.info_div:hover > .info_header{
+    color: #c8678f;
+}
+.glyphicon{
+    color: black;
+    font-size: 2em;
+    margin-left: 1.6em;
+}
+.info_div:hover >.glyphicon{
+    margin-left: 2.0em;
+
+}
+
+@keyframes infoDivAnimation1 {
+    100%{
+        transform:translate(-180px,-220px) ;
+    }
+}
+
+@keyframes infoDivAnimation2{
+   100%{
+       transform: translate(330px,-460px);
+
+    }
+}
+
+
+.info_div_animation{
+    animation-name: infoDivAnimation1;
+    animation-duration: 4s;
+    #animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 60%;
+
+}
+
+.info_div_animation2{
+    animation-name: infoDivAnimation2;
+    animation-duration: 4s;
+    #animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 40%;
+}
+
+@keyframes infoPageAnimation{
+    /*0%{*/
+        /*transform: translateY(-200px);*/
+    /*}*/
+    100%{
+        transform: translateY(700px);
+    }
+}
+.info_page{
+    animation-name: infoPageAnimation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 90%;
+    height: 27em;
+    position: absolute;
+    top:-400px;
+    opacity: 0.6;
+    border: 10px black solid;
+    box-sizing: border-box;
+    background-color: #c8678f;
+    margin: auto;
+    border-top-right-radius:5em;
+    border-bottom-left-radius: 5em;
+    left: 5%;
+}
+.footer{
+    background-color: black;
+    height: 15%;
+}
+
+.footer> ul{
+    list-style-type: none;
+    color:white;
+    font-family: Gabriola;
+    font-size: 2em;
+    display: inline-block;
+    margin-left: 40%;
+}
+
